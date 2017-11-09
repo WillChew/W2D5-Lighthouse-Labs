@@ -23,15 +23,19 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [self setupWKWebView];
+  [self setupActivityIndicator];
+}
+
+- (void)setupWKWebView {
   self.containerView = [self.view viewWithTag:tag];
   self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
   self.webView.navigationDelegate = self;
   [self.containerView addSubview:self.webView];
   [self.webView addObserver:self forKeyPath:@"loading" options:NSKeyValueObservingOptionNew context:nil];
-  [self createActivityIndicator];
 }
 
-- (void)createActivityIndicator {
+- (void)setupActivityIndicator {
   self.activityIndicator = [[UIActivityIndicatorView alloc] init];
   self.activityIndicator.hidesWhenStopped = YES;
   [self.activityIndicator startAnimating];
@@ -53,7 +57,7 @@
 // Example of KVO (Key Value Observing)
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
   if ([keyPath isEqualToString:@"loading"]) {
-    NSLog(@"%@", change);
+    NSLog(@"%s: %@", __PRETTY_FUNCTION__, change);
     if ([change[@"new"] isEqualToNumber:@1]) {
       [self.activityIndicator startAnimating];
     } else {
