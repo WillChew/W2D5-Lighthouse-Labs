@@ -24,12 +24,15 @@
   self.bottonLabel.text = @"";
 }
 
+#pragma mark - Setup
+
 - (void)setupTextField {
   // set the keyboard type
   self.textField.keyboardType = UIKeyboardTypeDefault;
   self.textField.clearButtonMode = UITextFieldViewModeUnlessEditing;
-  NSLog(@"%@", self.textField.typingAttributes);
 }
+
+#pragma mark - Actions
 
 // this is called by the button and gesture
 - (IBAction)resignFirstResponder:(id)sender {
@@ -37,35 +40,37 @@
   NSLog(@"%d: %s",__LINE__, __PRETTY_FUNCTION__);
 }
 
+#pragma mark - Helpers
+
 - (void)displayText:(NSString *)text {
   self.topLabel.text = text;
 }
 
-#pragma mark - TextFieldDelegates
+#pragma mark - TextFieldDelegate
 
-// fires when we tap on the textfield
+// delegate fires when we tap on the textfield
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
   [self displayText:@""];
   self.bottonLabel.text = @"";
-  // clears text when we begin editing (we could have set the property clearsOnBeginEditing on textfield to do this too)
+  // clears text when we begin editing (we could have set the property clearsOnBeginEditing on textfield to do this, actually that's the preferred way)
   self.textField.text = @"";
   NSLog(@"%d: %s", __LINE__, __PRETTY_FUNCTION__);
 }
 
-// fires when we end editing
+// delegate fires when we end editing
 - (void)textFieldDidEndEditing:(UITextField *)textField {
   [self displayText:textField.text];
   NSLog(@"%d: %s", __LINE__, __PRETTY_FUNCTION__);
 }
 
-// fires when the clear button is about to fire
+// delegate fires when the clear button is about to fire
 - (BOOL)textFieldShouldClear:(UITextField *)textField {
   NSLog(@"%d: %s", __LINE__, __PRETTY_FUNCTION__);
   [self displayText:@""];
   return YES;
 }
 
-// fires when the return key is tapped which allows us to respond accordingly
+// delegate fires when the return key is tapped which allows us to respond accordingly
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
   [textField resignFirstResponder];
   NSLog(@"%d: %s",__LINE__, __PRETTY_FUNCTION__);
@@ -81,7 +86,6 @@ eg.
 	NSRange range = NSMakeRange(6, 6);
 	NSString *subString = [name substringWithRange:range];
   NSLog(@"%@", subString); // prints thomps
-
 */
 
 // used to handle populating the label while we type

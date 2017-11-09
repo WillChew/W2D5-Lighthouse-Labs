@@ -118,10 +118,10 @@
 		AA79C9BC1E31292A00A5044D /* W2D5-Demos */ = {
 			isa = PBXGroup;
 			children = (
+				AA8AC1C11E7B30E5008689CD /* ResponderChain */,
 				AA79CA011E3190B000A5044D /* TextViewControllers */,
 				AA79CA001E3190A000A5044D /* WebViewControllers */,
 				AA79C9FF1E31909300A5044D /* CoreGraphics */,
-				AA8AC1C11E7B30E5008689CD /* ResponderChain */,
 				AA79C9C61E31292B00A5044D /* Main.storyboard */,
 				AA79C9BD1E31292A00A5044D /* Supporting Files */,
 			);
