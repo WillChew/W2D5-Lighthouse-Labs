@@ -12,7 +12,6 @@
 		AA79C9C81E31292B00A5044D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA79C9C61E31292B00A5044D /* Main.storyboard */; };
 		AA79C9CA1E31292B00A5044D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA79C9C91E31292B00A5044D /* Assets.xcassets */; };
 		AA79C9CD1E31292B00A5044D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA79C9CB1E31292B00A5044D /* LaunchScreen.storyboard */; };
-		AA79C9D81E31292B00A5044D /* W2D5_DemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA79C9D71E31292B00A5044D /* W2D5_DemosTests.m */; };
 		AA79C9E41E31296500A5044D /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA79C9E31E31296500A5044D /* TextFieldViewController.m */; };
 		AA79C9E71E3140AF00A5044D /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA79C9E61E3140AF00A5044D /* TextViewViewController.m */; };
 		AA79C9EA1E314A5C00A5044D /* WebManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA79C9E91E314A5C00A5044D /* WebManagerViewController.m */; };
@@ -28,16 +27,6 @@
 		AA8AC1C41E7B3102008689CD /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8AC1C31E7B3102008689CD /* CustomView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AA79C9D41E31292B00A5044D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA79C9B21E31292A00A5044D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA79C9B91E31292A00A5044D;
-			remoteInfo = "W2D5-Demos";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		AA79C9BA1E31292A00A5044D /* W2D5-Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W2D5-Demos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA79C9BE1E31292A00A5044D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,9 +36,6 @@
 		AA79C9C91E31292B00A5044D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA79C9CC1E31292B00A5044D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA79C9CE1E31292B00A5044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA79C9D31E31292B00A5044D /* W2D5-DemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W2D5-DemosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA79C9D71E31292B00A5044D /* W2D5_DemosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = W2D5_DemosTests.m; sourceTree = "<group>"; };
-		AA79C9D91E31292B00A5044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA79C9E21E31296500A5044D /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		AA79C9E31E31296500A5044D /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		AA79C9E51E3140AF00A5044D /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
@@ -86,13 +72,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA79C9D01E31292B00A5044D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				AA79C9BC1E31292A00A5044D /* W2D5-Demos */,
-				AA79C9D61E31292B00A5044D /* W2D5-DemosTests */,
 				AA79C9BB1E31292A00A5044D /* Products */,
 				AA79C9EB1E314B6F00A5044D /* Frameworks */,
 			);
@@ -110,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				AA79C9BA1E31292A00A5044D /* W2D5-Demos.app */,
-				AA79C9D31E31292B00A5044D /* W2D5-DemosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,15 +114,6 @@
 				AA79C9BE1E31292A00A5044D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AA79C9D61E31292B00A5044D /* W2D5-DemosTests */ = {
-			isa = PBXGroup;
-			children = (
-				AA79C9D71E31292B00A5044D /* W2D5_DemosTests.m */,
-				AA79C9D91E31292B00A5044D /* Info.plist */,
-			);
-			path = "W2D5-DemosTests";
 			sourceTree = "<group>";
 		};
 		AA79C9EB1E314B6F00A5044D /* Frameworks */ = {
@@ -229,24 +197,6 @@
 			productReference = AA79C9BA1E31292A00A5044D /* W2D5-Demos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA79C9D21E31292B00A5044D /* W2D5-DemosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA79C9DF1E31292B00A5044D /* Build configuration list for PBXNativeTarget "W2D5-DemosTests" */;
-			buildPhases = (
-				AA79C9CF1E31292B00A5044D /* Sources */,
-				AA79C9D01E31292B00A5044D /* Frameworks */,
-				AA79C9D11E31292B00A5044D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA79C9D51E31292B00A5044D /* PBXTargetDependency */,
-			);
-			name = "W2D5-DemosTests";
-			productName = "W2D5-DemosTests";
-			productReference = AA79C9D31E31292B00A5044D /* W2D5-DemosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,12 +210,6 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6D3DA9G4XW;
 						ProvisioningStyle = Automatic;
-					};
-					AA79C9D21E31292B00A5044D = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6D3DA9G4XW;
-						ProvisioningStyle = Automatic;
-						TestTargetID = AA79C9B91E31292A00A5044D;
 					};
 				};
 			};
@@ -283,7 +227,6 @@
 			projectRoot = "";
 			targets = (
 				AA79C9B91E31292A00A5044D /* W2D5-Demos */,
-				AA79C9D21E31292B00A5044D /* W2D5-DemosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,13 +239,6 @@
 				AA79C9CD1E31292B00A5044D /* LaunchScreen.storyboard in Resources */,
 				AA79C9CA1E31292B00A5044D /* Assets.xcassets in Resources */,
 				AA79C9C81E31292B00A5044D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA79C9D11E31292B00A5044D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,23 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA79C9CF1E31292B00A5044D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA79C9D81E31292B00A5044D /* W2D5_DemosTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AA79C9D51E31292B00A5044D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA79C9B91E31292A00A5044D /* W2D5-Demos */;
-			targetProxy = AA79C9D41E31292B00A5044D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AA79C9C61E31292B00A5044D /* Main.storyboard */ = {
@@ -493,32 +413,6 @@
 			};
 			name = Release;
 		};
-		AA79C9E01E31292B00A5044D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6D3DA9G4XW;
-				INFOPLIST_FILE = "W2D5-DemosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanutmobile.steve.W2D5-DemosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/W2D5-Demos.app/W2D5-Demos";
-			};
-			name = Debug;
-		};
-		AA79C9E11E31292B00A5044D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6D3DA9G4XW;
-				INFOPLIST_FILE = "W2D5-DemosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanutmobile.steve.W2D5-DemosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/W2D5-Demos.app/W2D5-Demos";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,15 +430,6 @@
 			buildConfigurations = (
 				AA79C9DD1E31292B00A5044D /* Debug */,
 				AA79C9DE1E31292B00A5044D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA79C9DF1E31292B00A5044D /* Build configuration list for PBXNativeTarget "W2D5-DemosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA79C9E01E31292B00A5044D /* Debug */,
-				AA79C9E11E31292B00A5044D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
