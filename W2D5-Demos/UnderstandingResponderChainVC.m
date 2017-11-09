@@ -15,7 +15,7 @@
 @implementation UnderstandingResponderChainVC
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-  
+  NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 @end

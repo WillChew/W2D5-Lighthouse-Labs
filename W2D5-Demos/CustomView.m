@@ -16,7 +16,6 @@
   CGPoint locationInView = [touch locationInView:self];
   CGPoint previousLocationInView = [touch previousLocationInView:self];
   NSLog(@"%@ location in view", NSStringFromCGPoint(locationInView) );
-  NSLog(@"%@ previous location in view", NSStringFromCGPoint(previousLocationInView) );
-
+  NSLog(@"%@ previous location in view", NSStringFromCGPoint(previousLocationInView));
 }
 @end
