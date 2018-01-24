@@ -89,6 +89,7 @@ eg.
 */
 
 // used to handle populating the label while we type
+//textField: shouldChangeCharactersInRange: replacementString:
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
   

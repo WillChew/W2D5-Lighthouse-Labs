@@ -70,10 +70,4 @@
   [self.webView removeObserver:self forKeyPath:@"loading"];
 }
 
-
-
-
-
-
-
 @end

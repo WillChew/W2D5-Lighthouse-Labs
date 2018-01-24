@@ -15,7 +15,20 @@
   UITouch *touch = touches.anyObject;
   CGPoint locationInView = [touch locationInView:self];
   CGPoint previousLocationInView = [touch previousLocationInView:self];
-  NSLog(@"%@ location in view", NSStringFromCGPoint(locationInView) );
-  NSLog(@"%@ previous location in view", NSStringFromCGPoint(previousLocationInView));
+  NSLog(@"location in view: %@", NSStringFromCGPoint(locationInView) );
+  NSLog(@"previous location in view: %@", NSStringFromCGPoint(previousLocationInView));
+  
 }
+
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//  
+//}
+//
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//  
+//}
+//
+//- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//  
+//}
 @end

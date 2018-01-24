@@ -24,7 +24,7 @@
 
 - (void)setupTextView {
   self.textView.text = @"";
-  self.automaticallyAdjustsScrollViewInsets = NO;
+//  self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)setupStyle {
