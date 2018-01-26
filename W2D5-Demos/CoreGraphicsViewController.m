@@ -10,7 +10,7 @@
 #import "TopView.h"
 #import "BottomView.h"
 
-@interface CoreGraphicsViewController ()<UITextFieldDelegate>
+@interface CoreGraphicsViewController ()
 @property (weak, nonatomic) IBOutlet BottomView *bottomView;
 @property (weak, nonatomic) IBOutlet TopView *topView;
 @end

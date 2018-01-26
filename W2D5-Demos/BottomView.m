@@ -42,6 +42,14 @@
   [self setNeedsDisplay];
 }
 
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+  
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+  
+}
+
 #pragma mark - Drawing
 
 - (void)drawRect:(CGRect)rect {
